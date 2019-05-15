@@ -1,28 +1,35 @@
 
-#include<stdio.h>//arquivo cabeçalho que me contem a biblioteca das funçoes
-                //STD:STANDAR IO: IN AND OUT
 #include<math.h>
-#include<stdlib.h>//arquivo de biblioteca if
+#include<stdlib.h>
 #include <dos.h>
 
+char player[16];
+int ihp;
+int f;
+int idefesa;
+int ivelocidade;
+int inivel;
+int ixp;
 
+/////////////////////////////////////////////////////////////////////////////////////////////
 
+char a;
+int cont;
+int b, c, d, corno;
 
 int main (void) {
-    int a;
-    int cont;
-    int b;
-    int c, d;
+corno = 0;
+    
 	do{
 
-    printf("vc que hackear a nasa ? 1 para sim ou 2 para nao\n");
-    scanf(" %d",&a);
+    printf("vc que hackear a nasa ? s para sim ou n para nao\n");
+    scanf(" %c",&a);
     printf("voce nao pode negar\n");
     
-	}while(a != 1);
+	}while(a != 's');
 		
 	
-    while (a == 1 && cont < 10000) {
+    while (a == 's' && cont < 10000) {
         printf("0101010101011000101001001010100101010101010101010101011100000110101010100010100101011100010101");
         cont = cont+1;
 	}
@@ -34,14 +41,46 @@ int main (void) {
 
 
     if (b == 1){
-    	int cont2 = 0;
-		while(cont2 < 10){
-				printf("O foguete explodi \nvc morreu \ntodo mundo morreu \n");
-				cont2 = cont2+1;
-		}
-	printf("escolha um o dia do seu enterro\n");
-	printf("pera, kkkkkkk vc morreu\n");
-	system("pause");
+    	printf("\n\nvoce esta indo para marte\n\n");
+    	printf("O que vc que fazer agora ?\n\n");
+    	printf("1-se estressar\n");
+    	printf("2-tentar pilotar o foguete\n");
+    	printf("3-assistir live do yoda\n");
+    	printf("4-se acalamar\n");
+    	scanf(" %d", &c);
+    	
+    	if(c == 1){
+    		printf("\n\nestamos abrindo seu League of legends \nse voce nao tiver o lol nada ira acontecer \npassar bem\n");
+    		system("CD C:\\Riot Games\\League of Legends");
+    		system("start LeagueClient.exe");
+    		system("pause");
+    		system("start https://jogue.br.leagueoflegends.com/video/index.html?utm_expid=.IBpUpuakTyWUEO2az2ffQw.2&utm_referrer=https%3A%2F%2Fbr.leagueoflegends.com%2Fpt%2F");
+    		
+    		
+		}else
+		if(c == 2){
+			printf("nao se pilota foguete \nvoce aperta varios botoes aletorios \ne o foguete explode \n\nvoce morreu no espaco \nagora seu corpo ira vagar pela imensidao do espaco\n\n");
+			system("pause");
+			
+		}else
+		if(c == 3){
+			system("start https://www.twitch.tv/yoda");
+			corno=1;
+		}else
+		if(c == 4){
+			system("start steam://rungameid/413150");
+			printf("\n\nestamos iniciando Stardew Valley \nse voce nao tiver o jogo estamos te enviando o link para baixar dps do enter");
+			system("pause");
+			system("start https://store.steampowered.com/app/413150/Stardew_Valley/");
+			corno=1;
+			
+		}else{
+				printf("voce escolheu a opçao errado.");
+				system("pause");
+			}
+			
+		
+    	
 	
 	}else
 	if (b == 2){
@@ -95,6 +134,9 @@ int main (void) {
 				printf("FBI: we just test the netflix\n\n");
 				system("pause");
 				
+			}else{
+				printf("voce escolheu a opçao errado.");
+				system("pause");
 			}
 			
 			
@@ -104,9 +146,13 @@ int main (void) {
 			system("pause");
 			printf("\n\nElon Musk:now i got the the cutest puppies that have ever been in this world\n");
 			system("pause");
-			printf("\n\nElon Musk: did u forget ? im a fucking loli\n");
+			printf("\n\nElon Musk: did u forget ? im a fucking loli dude\n");
 			
-		}
+		}else{
+				printf("voce escolheu a opçao errado.");
+				system("pause");
+			}
+			
 		
 		
 		
@@ -115,28 +161,49 @@ int main (void) {
 	if(b == 3){
 		printf("\nvoce iniciou a terceira guerra mundial\n\n recomendamos que voce fuja\n");
 		printf("suas opcoes sao\n\n 1 - procurar bunkers a venda\n\n 2 - procurar bunkers publicos\n\n 3 - sentar e chorar\n\n 4 - se alistar para sobreviver\n");
-		scanf(" %d",&c);
+		scanf(" %d", &c);
 		
 		if(c == 1){
 			printf("\n O mais barato custa 25 milhoes \nviver foi bom\n\n");
 			system("pause");
-					}
+					}else
 		if (c == 2){
 			
 			printf("\nlamento mais no Brasil nao tem abrigos publicos \nviver foi bom\n\n");
 			system("pause");
-		}
+		}else
 		if (c == 3){
 			printf("Sua vida foi uma merda\n\n");
 			system("pause");
-		}
+		}else
 		if (c == 4){
 			printf("voce escolheu servi a patria \n");
-			system("start https://www.alistamento.eb.mil.br");
+			system("start https://www.eb.mil.br/web/ingresso/servico-militar");
 			system("pause");
-		}
+		}else{
+				printf("voce escolheu a opçao errado.");
+				system("pause");
+			}
+			
 		
 	}
+
+
+if(corno==1){
+	
+	printf("\n\napos vc ter visto a live do yoda ou \nter praticado suas tecnicas de botanica \nem stardew valley vc agora esta preparado para pisar em marte");
+	printf("\n\nseu imperio inicia aqui\n\n");
+	system("pause");
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
 
    return(0);
 
