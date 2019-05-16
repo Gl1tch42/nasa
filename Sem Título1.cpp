@@ -5,7 +5,7 @@
 
 char player[16];
 int ihp;
-int if;
+int ifor'ç'a;
 int idefesa;
 int ivelocidade;
 int inivel;
